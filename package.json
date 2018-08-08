@@ -1,0 +1,59 @@
+{
+  "name": "crypty",
+  "version": "0.1.0",
+  "description": "Simple encryption and decryption.",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel src -d lib",
+    "lint": "eslint index.js src",
+    "test": "jest test",
+    "test:watch": "yarn test --watch --collectCoverage=no",
+    "codecov": "yarn test && codecov",
+    "prepublish": "npm test && npm run lint && npm run compile"
+  },
+  "keywords": [
+    "crypto",
+    "decrypt",
+    "decryption",
+    "encrypt",
+    "encryption",
+    "salt",
+    "cripty",
+    "crypti"
+  ],
+  "author": "Sebastian Ferrari <sebas5384@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "codecov": "^3.0.2",
+    "eslint": "^4.19.1",
+    "eslint-config-taller": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^23.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebas5384/crypty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebas5384/crypty/issues"
+  },
+  "homepage": "https://github.com/sebas5384/crypty#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "moduleNameMapper": {
+      "^crypty(.*)$": "<rootDir>/src$1"
+    }
+  }
+}
