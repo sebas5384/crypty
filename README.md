@@ -37,3 +37,7 @@ const hash = encrypt('my text', secret)
 const text = decrypt(hash, secret)
 // => 'my text'
 ```
+
+## Disclaimer
+
+Based on [node-crypto-examples](https://github.com/chris-rock/node-crypto-examples/blob/master/crypto-ctr.js) from [@chris-rock](https://github.com/chris-rock).
