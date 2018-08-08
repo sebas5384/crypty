@@ -8,7 +8,8 @@ node_js:
 after_script:
 - npm run codecov
 deploy:
-  on:
-    tags: true
+  provider: npm
   api_key:
     secure: b5/XkxaxhBgWTMWEk7T6JJWfP9+dZA6YY7KbBj0dOcDWAGvnoSkr8tgcQP+0DtWpZBdmjHfeb2Xj/S1UP457Fh62kwmNP6zoM9W7q7Ww8b2tt1S3unbiC+EGpEZQrjVPnSQ+93jnuV5DUpZy5IYoG+hblXhmFAkGMMuPePVaD5GxGJeFdYU1BhTAdSxp086B8+8y4+eVPp9GFdHTuDFyE6uaVZ99hdjDNgXGhSJ7Q+MbTGCFh5k4HudmUQPSGNhqjUrmyYpjx3/oa0o2GfYQ48317GovmYeVDmDnLRqrQkSgGiQUHcs75oqlMz8l+qkS/bbccskrC6UrALbAdipejPIG/w+7zeVX0JbbcfW59NqToJlbBXj778YYIFnAvWOSyfAPkAUkBQnq5ZPOL7bWRlEODoI49OHUlJzQx7IH3Tacc4IL3LkDh5vPfV1Zjmb2Z28ehaNx+J8M1fPBXnybvPSqcSvkWk6cJeKEeSW4wYevkTTn4RlbavLTEf9NbXiqAk7eiwKirPJUxPbVM1fUBqPI/0K2u9LHUyOaR7gEjHLSKfRa39CTGK4kbhdUKyrmxhtZhQQlcM562h4dVspcGWlAiP/4FnzQ0EhHwmZLdjcmfC6gD5r99N1O6gZwRE/onajb15DgaYkGHek3PO77gmRN8tOV4gJSEZB+0j+huns=
+  on:
+    tags: true
